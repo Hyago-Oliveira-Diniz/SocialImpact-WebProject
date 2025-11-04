@@ -1,4 +1,4 @@
-/* Reset básico e corpo */
+
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
@@ -6,7 +6,6 @@ body {
   color: #333;
 }
 
-/* Header aprimorado */
 header {
   background: linear-gradient(135deg, #00539C, #003B6F);
   color: #fff;
@@ -27,7 +26,7 @@ header h1 {
   font-family: 'Trebuchet MS', sans-serif;
 color: #fff; }
 
-/* Navegação mais elegante */
+
 nav {
   display: flex;
   justify-content: center;
@@ -65,7 +64,7 @@ nav a:hover::after {
   width: 100%;
 }
 
-/* Container principal */
+
 .container {
   width: 90%;
   max-width: 1000px;
@@ -76,20 +75,20 @@ nav a:hover::after {
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
-/* Títulos */
+
 h1, h2, h3 {
   color: #00539C;
   margin-bottom: 15px;
 }
 
-/* Imagens responsivas */
+
 img.responsive {
   width: 100%;
   height: auto;
   border-radius: 6px;
 }
 
-/* Footer */
+
 .footer {
   background: #003B6F;
   color: #fff;
@@ -99,7 +98,6 @@ img.responsive {
   font-size: 0.9em;
 }
 
-/* Botões */
 .button {
   display: inline-block;
   padding: 12px 25px;

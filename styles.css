@@ -1,91 +1,343 @@
-
+/* ===== BASE ===== */
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
-  background: #f4f4f4;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f5f7fa;
   color: #333;
+  line-height: 1.7;
 }
 
-header {
-  background: linear-gradient(135deg, #00539C, #003B6F);
-  color: #fff;
-  padding: 30px 20px;
-  text-align: center;
-  position: relative;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  transition: all 0.3s ease;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 2.5em;
-  letter-spacing: 2px;
-}
-
-.thh {
-  font-family: 'Trebuchet MS', sans-serif;
-color: #fff; }
-
-
-nav {
+/* ===== NAVBAR FIXA ===== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #003B6F;
   display: flex;
   justify-content: center;
-  background: #003B6F;
-  padding: 12px 0;
-  box-shadow: inset 0 -1px 0 rgba(255,255,255,0.1);
+  padding: 14px 0;
+  z-index: 200;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
-nav a {
+.navbar a {
   color: #fff;
-  margin: 0 20px;
   text-decoration: none;
-  font-weight: bold;
+  margin: 0 25px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
   position: relative;
   transition: color 0.3s ease;
 }
 
-nav a::after {
+.navbar a::after {
   content: '';
-  display: block;
+  position: absolute;
   width: 0;
   height: 2px;
   background: #FFD700;
-  transition: width 0.3s;
-  position: absolute;
-  bottom: -4px;
   left: 0;
+  bottom: -4px;
+  transition: width 0.3s ease;
 }
 
-nav a:hover {
+.navbar a:hover {
   color: #FFD700;
 }
 
-nav a:hover::after {
+.navbar a:hover::after {
   width: 100%;
 }
 
+/* ===== HEADER ===== */
+header {
+  margin-top: 60px;
+  background-image: linear-gradient(rgba(0, 59, 111, 0.6), rgba(0, 59, 111, 0.6)),
+                    url('https://www.sul21.com.br/wp-content/uploads/2015/10/20151005-jornal-sul21-9486cf051015-05.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-bottom: 4px solid #FFD700;
+}
 
+header h1 {
+  margin: 0;
+  font-size: 2.8em;
+  letter-spacing: 1.2px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+}
+
+header p {
+  font-size: 1.2em;
+  margin-top: 12px;
+  opacity: 0.95;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}
+
+/* ===== CONTEÚDO CENTRAL ===== */
 .container {
-  width: 90%;
-  max-width: 1000px;
-  margin: 20px auto;
+  width: calc(100% - 540px);
+  max-width: 900px;
+  margin: 30px auto;
   background: #fff;
-  padding: 25px;
-  border-radius: 8px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  padding: 40px 50px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  text-align: center;
+  box-sizing: border-box;
 }
 
-
-h1, h2, h3 {
+.container h2, .container h3 {
   color: #00539C;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
+.container p {
+  text-align: justify;
+  margin-bottom: 20px;
+  font-size: 1.05em;
+}
+
+.container ul {
+  list-style: none;
+  padding: 0;
+  margin: 25px auto;
+  width: 85%;
+  text-align: left;
+}
+
+.container ul li {
+  margin-bottom: 12px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.container ul li::before {
+  content: "•";
+  color: #FFD700;
+  position: absolute;
+  left: 0;
+  font-size: 1.3em;
+}
 
 img.responsive {
   width: 100%;
   height: auto;
+  border-radius: 8px;
+  margin: 25px 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* ===== SIDEBAR ESQUERDA ===== */
+.sidebar-left {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 260px;
+  height: calc(100% - 60px);
+  background:  #003B6F;
+  color: #fff;
+  padding: 25px 20px;
+  box-shadow: 4px 0 10px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+.patrocinador-section h3 {
+  text-align: center;
+  color: #FFD700;
+  margin-bottom: 15px;
+  font-size: 1.3em;
+}
+
+.patrocinador-card {
+  background: #fff;
+  color: #003B6F;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.patrocinador-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.patrocinador-card p {
+  font-size: 0.95em;
+  line-height: 1.5em;
+  margin-bottom: 10px;
+}
+
+.btn-patrocinador {
+  display: inline-block;
+  background: #FFD700;
+  color: #003B6F;
+  text-decoration: none;
+  padding: 10px 15px;
   border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.btn-patrocinador:hover {
+  background: #fff;
+  transform: translateY(-2px);
+}
+
+/* ===== APOIE ESTA CAUSA ===== */
+.apoio-section {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
+  background:  #013f75c9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.apoio-section h4 {
+  color: #FFD700;
+  font-size: 1.2em;
+  margin-bottom: 12px;
+}
+
+.apoio-section p {
+  font-size: 0.95em;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.btn-apoio {
+  display: block;
+  background: #FFD700;
+  color: #003B6F;
+  text-decoration: none;
+  margin: 10px auto;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  width: 80%;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.btn-apoio:hover {
+  background: #fff;
+  transform: translateY(-2px);
+}
+
+/* ===== SIDEBAR DIREITA ===== */
+.sidebar {
+  position: fixed;
+  top: 60px;
+  right: 0;
+  width: 260px;
+  height: calc(100% - 60px);
+  background: #003B6F;
+  color: #fff;
+  padding: 25px 20px;
+  box-shadow: -4px 0 10px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+.user-section {
+  text-align: center;
+}
+
+.user-section h3 {
+  margin-bottom: 15px;
+  color: #FFD700;
+  font-size: 1.3em;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-form input {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 0.95em;
+}
+
+.login-form button {
+  width: 95%;
+  padding: 10px;
+  background: #FFD700;
+  color: #003B6F;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-form button:hover {
+  background: #fff;
+  color: #003B6F;
+}
+
+.cadastro-text {
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
+.cadastro-text a {
+  color: #FFD700;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cadastro-text a:hover {
+  text-decoration: underline;
+}
+
+/* ===== SESSÃO SIGA-NOS ===== */
+.social-section {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
+  background: #013f75c9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.social-section h4 {
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  color: #FFD700;
+}
+
+.social-icon {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 1.8em;
+  color: #FFD700;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+  color: #fff;
 }
 
 
@@ -93,23 +345,8 @@ img.responsive {
   background: #003B6F;
   color: #fff;
   text-align: center;
-  padding: 15px 0;
-  margin-top: 40px;
+  padding: 18px 0;
+  margin-top: 50px;
   font-size: 0.9em;
-}
-
-.button {
-  display: inline-block;
-  padding: 12px 25px;
-  background: #00539C;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-  transition: background 0.3s ease, transform 0.2s ease;
-}
-
-.button:hover {
-  background: #003B6F;
-  transform: translateY(-2px);
+  letter-spacing: 0.4px;
 }

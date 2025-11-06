@@ -4,31 +4,89 @@
   <meta charset="UTF-8">
   <title>Causas – Crianças Sem Lar</title>
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <!-- Font Awesome para ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
-  <header>
-    <h1 class="thh">Crianças Sem Lar</h1>
-    <p>Entenda as causas da falta de moradia infantil</p>
-  </header>
-  <nav>
+  <!-- ======= NAVBAR ======= -->
+  <nav class="navbar">
     <a href="index.html">Home</a>
     <a href="causas.html">Causas</a>
     <a href="noticias.html">Notícias</a>
     <a href="ajudar.html">Como Ajudar</a>
   </nav>
-  <div class="container">
+
+  <!-- ======= SIDEBAR ESQUERDA ======= -->
+  <div class="sidebar-left">
+    <div class="patrocinador-section">
+      <h3>Patrocinador Oficial</h3>
+      <div class="patrocinador-card">
+        <img src="https://portal.unisepe.com.br/wp-content/themes/unisepe/assets/images/logos/UNIVR.png" alt="UNISEPE Logo">
+        <p><strong>UNISEPE</strong> apoia o projeto <em>Crianças Sem Lar</em>, acreditando na transformação social através da educação e solidariedade.</p>
+        <a href="https://www.unisepe.com.br" target="_blank" class="btn-patrocinador">Acesse aqui para ver mais</a>
+      </div>
+    </div>
+
+    <div class="apoio-section">
+      <h4>Apoie esta causa</h4>
+      <p>Você também pode fazer parte dessa missão!</p>
+      <a href="doar.html" class="btn-apoio">Seja Doador</a>
+      <a href="voluntario.html" class="btn-apoio">Seja Voluntário</a>
+    </div>
+  </div>
+
+  <!-- ======= SIDEBAR DIREITA ======= -->
+  <div class="sidebar">
+    <div class="user-section">
+      <h3>Entrar</h3>
+      <form class="login-form">
+        <input type="text" placeholder="Usuário" required>
+        <input type="password" placeholder="Senha" required>
+        <button type="submit">Login</button>
+      </form>
+      <p class="cadastro-text">Não tem conta? <a href="cadastro.html">Cadastre-se</a></p>
+    </div>
+
+    <div class="social-section">
+      <h4>Siga-nos</h4>
+      <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+      <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+    </div>
+  </div>
+
+  <!-- ======= CABEÇALHO ======= -->
+  <header>
+    <h1 class="thh">Crianças Sem Lar</h1>
+    <p>Entenda as causas da falta de moradia infantil</p>
+  </header>
+
+  <!-- ======= CONTEÚDO PRINCIPAL ======= -->
+  <main class="container">
     <h2>Por que tantas crianças ficam sem lar?</h2>
     <p>Existem múltiplos fatores que levam à situação de crianças desabrigadas ou em moradias instáveis:</p>
+
     <h3>Pobreza extrema</h3>
     <p>Famílias com rendimentos insuficientes muitas vezes não conseguem arcar com aluguel ou condições mínimas de moradia.</p>
+
     <h3>Despejos e falta de moradia social</h3>
-    <p>Em países como a Inglaterra, foi apontado que <em>uma criança fica sem lar a cada oito minutos</em></p>
+    <p>Em países como a Inglaterra, foi apontado que <em>uma criança fica sem lar a cada oito minutos</em>.</p>
+
     <h3>Conflitos, migração e instabilidade familiar</h3>
     <p>Guerra, violência doméstica, migração forçada e rupturas familiares contribuem para que as crianças fiquem sem lar seguro.</p>
-    <img class="responsive" src="https://cdn.pixabay.com/photo/2013/09/08/17/04/boy-180437_1280.jpg">
+
+    <img class="responsive" src="https://cdn.pixabay.com/photo/2013/09/08/17/04/boy-180437_1280.jpg" alt="Criança desabrigada">
+
     <h3>Impactos na infância</h3>
     <p>Ficar sem moradia afeta o acesso à escola, saúde mental, sensação de segurança e desenvolvimento global da criança. Por exemplo, na Escócia foram registradas mais de 3.500 crianças em moradia temporária em Edimburgo – mais que o total de crianças sem lar em todo o País de Gales.</p>
-  </div>
+  </main>
+
+  <!-- ======= RODAPÉ ======= -->
   <footer class="footer">
     &copy; 2025 Crianças Sem Lar. Todos os direitos reservados.
   </footer>

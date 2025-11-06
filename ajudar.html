@@ -4,23 +4,72 @@
   <meta charset="UTF-8">
   <title>Como Ajudar – Crianças Sem Lar</title>
   <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1 class="thh">Crianças Sem Lar</h1>
-    <p>Descubra como você pode fazer a diferença</p>
-  </header>
 
-  <nav>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <!-- Font Awesome para ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- ======= NAVBAR ======= -->
+  <nav class="navbar">
     <a href="index.html">Home</a>
     <a href="causas.html">Causas</a>
     <a href="noticias.html">Notícias</a>
     <a href="ajudar.html">Como Ajudar</a>
   </nav>
 
-  <div class="container">
-    <h2>Formas de ajudar</h2>
+  <!-- ======= SIDEBAR ESQUERDA ======= -->
+  <div class="sidebar-left">
+    <div class="patrocinador-section">
+      <h3>Patrocinador Oficial</h3>
+      <div class="patrocinador-card">
+        <img src="https://portal.unisepe.com.br/wp-content/themes/unisepe/assets/images/logos/UNIVR.png" alt="UNISEPE Logo">
+        <p><strong>UNISEPE</strong> apoia o projeto <em>Crianças Sem Lar</em>, acreditando na transformação social através da educação e solidariedade.</p>
+        <a href="https://www.unisepe.com.br" target="_blank" class="btn-patrocinador">Acesse aqui para ver mais</a>
+      </div>
+    </div>
 
+    <div class="apoio-section">
+      <h4>Apoie esta causa</h4>
+      <p>Você também pode fazer parte dessa missão!</p>
+      <a href="doar.html" class="btn-apoio">Seja Doador</a>
+      <a href="voluntario.html" class="btn-apoio">Seja Voluntário</a>
+    </div>
+  </div>
+
+  <!-- ======= SIDEBAR DIREITA ======= -->
+  <div class="sidebar">
+    <div class="user-section">
+      <h3>Entrar</h3>
+      <form class="login-form">
+        <input type="text" placeholder="Usuário" required>
+        <input type="password" placeholder="Senha" required>
+        <button type="submit">Login</button>
+      </form>
+      <p class="cadastro-text">Não tem conta? <a href="cadastro.html">Cadastre-se</a></p>
+    </div>
+
+    <div class="social-section">
+      <h4>Siga-nos</h4>
+      <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+      <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+    </div>
+  </div>
+
+  <!-- ======= CABEÇALHO ======= -->
+  <header>
+    <h1 class="thh">Crianças Sem Lar</h1>
+    <p>Descubra como você pode fazer a diferença</p>
+  </header>
+
+  <!-- ======= CONTEÚDO PRINCIPAL ======= -->
+  <main class="container">
+    <h2>Formas de ajudar</h2>
     <p>
       A luta contra a falta de moradia infantil e a vulnerabilidade social exige a união de todos — governos, empresas e cidadãos comuns.
       Existem várias maneiras de contribuir para um futuro mais digno para milhares de crianças brasileiras.  
@@ -82,15 +131,20 @@
     </article>
 
     <article>
-        <h3><a href="https://www.amigosdacruz.org.br/" target="_blank">Amigos da Cruz (Salvador)</a></h3>
-        <p>
-            A <strong>Amigos da Cruz</strong> é uma ONG que oferece apoio integral a crianças e adolescentes em situação de rua
-            na cidade de Salvador. Com programas de acolhimento, educação e capacitação profissional, a organização busca
-            reintegrar esses jovens à sociedade e garantir seus direitos fundamentais.
-        </p>
+      <h3><a href="https://www.amigosdacruz.org.br/" target="_blank">Amigos da Cruz (Salvador)</a></h3>
+      <p>
+        A <strong>Amigos da Cruz</strong> é uma ONG que oferece apoio integral a crianças e adolescentes em situação de rua
+        na cidade de Salvador. Com programas de acolhimento, educação e capacitação profissional, a organização busca
+        reintegrar esses jovens à sociedade e garantir seus direitos fundamentais.
+      </p>
+      <img class="small" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRtZmD_g55Mo2b1g4_rTxP6XP0QyD8mX9S5Q&s" alt="Logo Amigos da Cruz">
+    </article>
+  </main>
 
-        <img class="small" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRtZmD_g55Mo2b1g4_rTxP6XP0QyD8mX9S5Q&s" alt="Logo Amigos da Cruz">
-    </article> 
-    <footer class="footer">
+  <!-- ======= RODAPÉ ======= -->
+  <footer class="footer">
     &copy; 2025 Crianças Sem Lar. Todos os direitos reservados.
   </footer>
+
+</body>
+</html>

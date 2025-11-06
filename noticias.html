@@ -4,58 +4,114 @@
   <meta charset="UTF-8">
   <title>Notícias – Crianças Sem Lar</title>
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <!-- Font Awesome para ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <h1 class="thh">Crianças Sem Lar</h1>
-    <p>Últimas notícias sobre crianças em situação de moradia instável</p>
-  </header>
-  <nav>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
     <a href="index.html">Home</a>
     <a href="causas.html">Causas</a>
     <a href="noticias.html">Notícias</a>
     <a href="ajudar.html">Como Ajudar</a>
   </nav>
-  <div class="container">
+
+  <!-- SIDEBAR ESQUERDA -->
+  <div class="sidebar-left">
+    <div class="patrocinador-section">
+      <h3>Patrocinador Oficial</h3>
+      <div class="patrocinador-card">
+        <img src="https://portal.unisepe.com.br/wp-content/themes/unisepe/assets/images/logos/UNIVR.png" alt="UNISEPE Logo">
+        <p><strong>UNISEPE</strong> apoia o projeto <em>Crianças Sem Lar</em>, acreditando na transformação social através da educação e solidariedade.</p>
+        <a href="https://www.unisepe.com.br" target="_blank" class="btn-patrocinador">Acesse aqui para ver mais</a>
+      </div>
+    </div>
+
+    <div class="apoio-section">
+      <h4>Apoie esta causa</h4>
+      <p>Você também pode fazer parte dessa missão!</p>
+      <a href="doar.html" class="btn-apoio">Seja Doador</a>
+      <a href="voluntario.html" class="btn-apoio">Seja Voluntário</a>
+    </div>
+  </div>
+
+  <!-- SIDEBAR DIREITA -->
+  <div class="sidebar">
+    <div class="user-section">
+      <h3>Entrar</h3>
+      <form class="login-form">
+        <input type="text" placeholder="Usuário" required>
+        <input type="password" placeholder="Senha" required>
+        <button type="submit">Login</button>
+      </form>
+      <p class="cadastro-text">Não tem conta? <a href="cadastro.html">Cadastre-se</a></p>
+    </div>
+    <div class="social-section" aria-label="Siga-nos nas redes sociais">
+      <h4>Siga-nos</h4>
+      <div class="social-icons">
+        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="social-icon" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon" aria-label="Twitter" title="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header>
+    <h1 class="thh">Crianças Sem Lar</h1>
+    <p>Últimas notícias sobre crianças em situação de moradia instável</p>
+  </header>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main class="container">
+    <h2>Notícias Recentes</h2>
+
     <article>
       <h3>Número de crianças em situação de rua no Brasil é “inadmissível” e exige pacto nacional</h3>
-      <p>Mais de 350 mil pessoas vivem em situação de rua no Brasil segundo estudo da Observatório Brasileiro de Políticas Públicas com a População em Situação de Rua da UFMG. Destas, cerca de 3 % são crianças e adolescentes — o que representa mais de 10 mil menores de idade em extrema vulnerabilidade. A capital paulista lidera os registros.</p>
-      <a class="button" href="https://www.brasildefato.com.br/2025/07/23/numero-de-criancas-em-situacao-de-rua-no-brasil-e-inadmissivel-e-exige-pacto-nacional-afirma-pesquisador/">Leia mais</a>
+      <p>Mais de 350 mil pessoas vivem em situação de rua no Brasil segundo estudo da UFMG. Destas, cerca de 3% são crianças e adolescentes — o que representa mais de 10 mil menores em extrema vulnerabilidade.</p>
+      <a class="button" href="https://www.brasildefato.com.br/2025/07/23/numero-de-criancas-em-situacao-de-rua-no-brasil-e-inadmissivel-e-exige-pacto-nacional-afirma-pesquisador/" target="_blank" rel="noopener">Leia mais</a>
     </article>
 
     <article>
-      <h3>Censo revela que a cidade de São Paulo tem 3.759 menores em situação de rua</h3>
-      <p>Em levantamento realizado pela Prefeitura de São Paulo e divulgado em maio/2025, foram identificadas 3.759 crianças e adolescentes (0 a 17 anos) em situação de rua na capital paulista. O número mais que dobrou em comparação ao censo de 2007, que registrava 1.842 menores nessa condição. Pretos e pardos representam 69 % desse grupo vulnerável.</p>
-      <a class="button" href="https://www.cnnbrasil.com.br/nacional/censo-revela-que-a-cidade-de-sao-paulo-tem-3-759-menores-em-situacao-de-rua/">Leia mais</a>
+      <h3>Censo revela que São Paulo tem 3.759 menores em situação de rua</h3>
+      <p>Em levantamento da Prefeitura de São Paulo divulgado em 2025, foram identificadas 3.759 crianças e adolescentes em situação de rua — o número mais que dobrou em comparação ao censo de 2007.</p>
+      <a class="button" href="https://www.cnnbrasil.com.br/nacional/censo-revela-que-a-cidade-de-sao-paulo-tem-3-759-menores-em-situacao-de-rua/" target="_blank" rel="noopener">Leia mais</a>
     </article>
 
     <article>
       <h3>Mais de 335 mil pessoas vivem em situação de rua no Brasil</h3>
-      <p>Dados de março de 2025 mostram que 335.151 pessoas estão cadastradas no CadÚnico como em situação de rua no Brasil — dessas, 9.933 são crianças e adolescentes (3 %). O relatório aponta subnotificação e grande vulnerabilidade no acesso a moradia, educação e renda.</p>
-      <a class="button" href="https://agenciabrasil.ebc.com.br/direitos-humanos/noticia/2025/04/mais-de-335-mil-pessoas-vivem-em-situacao-de-rua-no-brasil">Leia mais</a>
+      <p>Dados de março de 2025 mostram que 335 mil pessoas estão cadastradas no CadÚnico como em situação de rua — dessas, quase 10 mil são crianças e adolescentes.</p>
+      <a class="button" href="https://agenciabrasil.ebc.com.br/direitos-humanos/noticia/2025/04/mais-de-335-mil-pessoas-vivem-em-situacao-de-rua-no-brasil" target="_blank" rel="noopener">Leia mais</a>
     </article>
 
     <article>
-      <h3>Crianças e adolescentes em situação de rua apresentam Carta Compromisso em seminário nacional</h3>
-      <p>Em Brasília, no final de julho de 2025, foi realizado o I Seminário Nacional de Direitos Humanos de Crianças e Adolescentes em Situação de Rua. Participantes elaboraram uma Carta Compromisso com reivindicações como censo do IBGE, inclusão no CadÚnico e políticas antirracistas.</p>
-      <a class="button" href="https://www.gov.br/mdh/pt-br/assuntos/noticias/2025/julho/criancas-e-adolescentes-em-situacao-de-rua-apresentam-carta-compromisso-em-seminario-nacional">Leia mais</a>
+      <h3>Crianças e adolescentes em situação de rua apresentam Carta Compromisso em seminário</h3>
+      <p>Em Brasília, julho de 2025, ocorreu o I Seminário Nacional de Direitos Humanos. Jovens em situação de rua apresentaram propostas de políticas públicas.</p>
+      <a class="button" href="https://www.gov.br/mdh/pt-br/assuntos/noticias/2025/julho/criancas-e-adolescentes-em-situacao-de-rua-apresentam-carta-compromisso-em-seminario-nacional" target="_blank" rel="noopener">Leia mais</a>
     </article>
 
     <article>
-      <h3>Número de crianças e adolescentes em situação de rua no DF cai pela metade em três anos</h3>
-      <p>Dados do 2º Censo Distrital da População em Situação de Rua no Distrito Federal mostram queda de 244 para 121 menores em situação de rua entre 2022 e 2025 — redução de cerca de 50 %, segundo o governo local.</p>
-      <a class="button" href="https://segov.df.gov.br/w/numero-de-criancas-e-adolescentes-em-situacao-de-rua-no-df-cai-pela-metade-em-tres-anos-1">Leia mais</a>
+      <h3>Número de menores em situação de rua no DF cai pela metade em três anos</h3>
+      <p>O 2º Censo Distrital mostrou que o número caiu de 244 para 121 menores entre 2022 e 2025 — redução de cerca de 50%, segundo o governo local.</p>
+      <a class="button" href="https://segov.df.gov.br/w/numero-de-criancas-e-adolescentes-em-situacao-de-rua-no-df-cai-pela-metade-em-tres-anos-1" target="_blank" rel="noopener">Leia mais</a>
     </article>
 
     <article>
-      <h3>Governo federal avança na revisão do Protocolo Nacional de Proteção Integral de Crianças e Adolescentes em Situação de Risco e Desastres</h3>
-      <p>Em 31 de julho/2025, foi realizada reunião técnica para revisar o protocolo diante dos desafios climáticos, enfatizando que mais de 40 milhões de crianças e adolescentes estão expostas a pelo menos um risco climático no Brasil.</p>
-      <a class="button" href="https://www.gov.br/mdh/pt-br/assuntos/noticias/2025/agosto/governo-federal-avanca-na-revisao-do-protocolo-nacional-de-protecao-integral-de-criancas-e-adolescentes-em-situacao-de-risco-e-desastres">Leia mais</a>
+      <h3>Governo federal revisa protocolo de proteção de crianças em desastres</h3>
+      <p>Mais de 40 milhões de crianças estão expostas a riscos climáticos no Brasil, segundo relatório apresentado em julho de 2025.</p>
+      <a class="button" href="https://www.gov.br/mdh/pt-br/assuntos/noticias/2025/agosto/governo-federal-avanca-na-revisao-do-protocolo-nacional-de-protecao-integral-de-criancas-e-adolescentes-em-situacao-de-risco-e-desastres" target="_blank" rel="noopener">Leia mais</a>
     </article>
+  </main>
 
-  </div>
+  <!-- RODAPÉ -->
   <footer class="footer">
     &copy; 2025 Crianças Sem Lar. Todos os direitos reservados.
   </footer>
+
 </body>
 </html>

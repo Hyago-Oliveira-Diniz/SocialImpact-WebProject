@@ -2,31 +2,79 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Crianças Sem Lar – Home</title>
- <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1 class="thh">Crianças Sem Lar</h1>
-    <p>Uma voz para as crianças que não têm um lar seguro</p>
-  </header>
+  <title>Crianças Sem Lar</title>
+  <link rel="stylesheet" href="styles.css">
 
-  <nav>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  
+  <!-- Font Awesome para ícones de redes sociais -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+ <!-- ======= NAVBAR ======= -->
+  <nav class="navbar">
     <a href="index.html">Home</a>
     <a href="causas.html">Causas</a>
     <a href="noticias.html">Notícias</a>
     <a href="ajudar.html">Como Ajudar</a>
   </nav>
 
-  <div class="container">
+  <!-- ======= SIDEBAR ESQUERDA ======= -->
+  <div class="sidebar-left">
+    <div class="patrocinador-section">
+      <h3>Patrocinador Oficial</h3>
+      <div class="patrocinador-card">
+        <img src="https://portal.unisepe.com.br/wp-content/themes/unisepe/assets/images/logos/UNIVR.png" alt="UNISEPE Logo">
+        <p><strong>UNISEPE</strong> apoia o projeto <em>Crianças Sem Lar</em>, acreditando na transformação social através da educação e solidariedade.</p>
+        <a href="https://www.unisepe.com.br" target="_blank" class="btn-patrocinador">Acesse aqui para ver mais</a>
+      </div>
+    </div>
+
+    <div class="apoio-section">
+      <h4>Apoie esta causa</h4>
+      <p>Você também pode fazer parte dessa missão!</p>
+      <a href="doar.html" class="btn-apoio">Seja Doador</a>
+      <a href="voluntario.html" class="btn-apoio">Seja Voluntário</a>
+    </div>
+  </div>
+
+  <!-- ======= SIDEBAR DIREITA ======= -->
+  <div class="sidebar">
+    <div class="user-section">
+      <h3>Entrar</h3>
+      <form class="login-form">
+        <input type="text" placeholder="Usuário" required>
+        <input type="password" placeholder="Senha" required>
+        <button type="submit">Login</button>
+      </form>
+      <p class="cadastro-text">Não tem conta? <a href="cadastro.html">Cadastre-se</a></p>
+    </div>
+
+    <div class="social-section">
+      <h4>Siga-nos</h4>
+      <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+      <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+    </div>
+  </div>
+
+  <!-- ======= HEADER ======= -->
+  <header>
+    <h1 class="thh">Crianças Sem Lar</h1>
+    <p>Uma voz para as crianças que não têm um lar seguro</p>
+  </header>
+
+  <main class="container">
     <h2>Bem-vindo ao projeto <em>Crianças Sem Lar</em></h2>
 
     <p>
       Em todo o mundo — e também no Brasil — milhares de crianças vivem em situação de extrema vulnerabilidade social, 
       dormindo nas ruas, em abrigos superlotados ou em moradias precárias. A infância, fase em que cada ser humano 
       deveria estar cercado de cuidado, afeto e segurança, é marcada pela exclusão, fome e falta de acesso à educação.  
-      O site <strong>Crianças Sem Lar</strong> foi criado para dar visibilidade a essa realidade muitas vezes invisível 
-      e incentivar ações concretas que possam transformar vidas.
+      O site <strong>Crianças Sem Lar</strong> foi criado para dar visibilidade a essa realidade e incentivar ações 
+      concretas que possam transformar vidas.
     </p>
 
     <p>
@@ -39,39 +87,24 @@
 
     <h3>O que você vai encontrar neste site</h3>
     <ul>
-      <li>
-        <strong>Causas:</strong> uma análise detalhada das razões que levam tantas crianças à situação de rua, 
-        incluindo pobreza extrema, abandono, violência doméstica, desigualdade social e falta de políticas públicas 
-        efetivas. Nesta seção, você entenderá o contexto que gera e perpetua o problema.
-      </li>
-
-      <li>
-        <strong>Notícias:</strong> uma seleção atualizada de reportagens, pesquisas e dados oficiais sobre o tema, 
-        tanto no Brasil quanto no exterior. Aqui você encontrará informações baseadas em fontes confiáveis e 
-        poderá acompanhar como diferentes regiões estão enfrentando esse desafio.
-      </li>
-
-      <li>
-        <strong>Como Ajudar:</strong> um guia prático com diversas formas de contribuir — desde doações e 
-        voluntariado até o apoio a campanhas, projetos sociais e ações governamentais que lutam pelo direito à moradia 
-        e proteção da infância. Cada gesto conta e pode mudar o destino de uma criança.
-      </li>
+      <li><strong>Causas:</strong> uma análise detalhada das razões que levam tantas crianças à situação de rua.</li>
+      <li><strong>Notícias:</strong> reportagens e pesquisas atualizadas sobre o tema.</li>
+      <li><strong>Como Ajudar:</strong> formas práticas de contribuir — doações, voluntariado e campanhas.</li>
     </ul>
 
     <h3>Por que este tema é importante?</h3>
     <p>
-      Falar sobre crianças desabrigadas é falar sobre o futuro de toda a sociedade. Quando uma criança cresce sem 
-      acesso a moradia, educação, alimentação e afeto, perde-se mais do que um lar — perde-se a chance de construir 
-      uma vida plena e cidadã. O enfrentamento desse problema exige empatia, responsabilidade coletiva e ação 
-      conjunta entre governo, instituições e pessoas comuns.  
+      Falar sobre crianças desabrigadas é falar sobre o futuro da sociedade. Quando uma criança cresce sem 
+      acesso à moradia, educação e afeto, perde-se a chance de construir uma vida plena.  
       Este site é um convite para que você conheça, reflita e se engaje nessa causa.
     </p>
 
     <p style="text-align:center;">
       <strong>Junte-se a nós nessa missão de garantir que nenhuma criança durma nas ruas.</strong>
     </p>
-  </div>
+  </main>
 
+  <!-- ======= FOOTER ======= -->
   <footer class="footer">
     &copy; 2025 Crianças Sem Lar. Todos os direitos reservados.
   </footer>

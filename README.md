@@ -58,16 +58,6 @@ O projeto está publicado via GitHub Pages.
 
 ---
 
-## 📌 Melhorias futuras
-
-* Adicionar JavaScript para interatividade
-* Melhorar acessibilidade (A11Y)
-* Integração com API de notícias
-* Formulário de contato
-* Design mais moderno
-
----
-
 ## 👨‍💻 Autor
 
 Hyago Oliveira Diniz
